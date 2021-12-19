@@ -17,7 +17,6 @@
     $query = mysqli_query($con, $username_existance_query);
 
 $query_result = mysqli_fetch_array($query);
-
     // echo "$query_result[upassword] ";
 
     if($query_result['upassword']  == $password)
