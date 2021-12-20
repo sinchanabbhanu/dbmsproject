@@ -21,7 +21,8 @@ $query_result = mysqli_fetch_array($query);
 
     if($query_result['upassword']  == $password)
     {
-        header('Location: Page-3.html');  
+        $_SESSION['username']=$username;
+        header('Location: Page-3.php');  
         mysqli_close($con);
     }
 
