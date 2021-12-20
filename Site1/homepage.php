@@ -10,6 +10,11 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+
 </head>
 <body>
     <section>
@@ -18,15 +23,18 @@ session_start();
         </div>
     </section>
     <section>
+        <table>
         <div class="student-details">
-        <table border="1">
-        <tr>
-        <td>student name</td>
-        <td>parent name</td>
-        <td>usn</td>
-        <td>course</td>
-        <td>category</td>
-        </tr>
+        <table class="table table-hover table-dark">
+        <thread>
+            <tr>
+                 <th scope="col">Student Name</th>
+                 <th scope="col">Parent Name</th>
+                 <th scope="col">Register Number</th>
+                 <th scope="col">Course</th>
+                 <th scope="col">Category</th>
+            </tr>
+        </thread>
     <?php
    
      $con = mysqli_connect("localhost", "root", "", "dbms");
@@ -43,14 +51,18 @@ session_start();
     while($row=mysqli_fetch_assoc($result))
     {
         ?>
-        <tr> 
+        <tbody>
+            <tr> 
            
-             <td><?php echo $row['sname']?></td>
-             <td><?php echo $row['pname']?></td>
-             <td><?php echo $row['usn']?></td>
-             <td><?php echo $row['cname']?></td>
-             <td><?php echo $row['catname']?></td>
-        </tr>
+           <td scope="row"><?php echo $row['sname']?></td>
+           <td><?php echo $row['pname']?></td>
+           <td><?php echo $row['usn']?></td>
+           <td><?php echo $row['cname']?></td>
+           <td><?php echo $row['catname']?></td>
+      </tr>
+    </tbody>
+       
+        
     <?php
             
     }
@@ -58,17 +70,19 @@ session_start();
    ?>
         </div>
     </section>
-    <section>
+    <section class="section-2">
         <div class="fee-details">
-        <table border="1">
-        <tr>
-        <td>tuition fees</td>
-        <td>subscription</td>
-        <td>exam fees</td>
-        <td>other fees</td>
-        <td>total</td>
-        </tr>
-    <?php
+        <table class="table table-hover table-dark">
+            <thread>
+                <tr>
+                   <th scope="col">Tuition Fees</th>
+                   <th scope="col">Subscription</th>
+                   <th scope="col">Exam Fees</th>
+                   <th scope="col">Other Fees</th>
+                   <th scope="col">Total</th>
+                   </tr>
+            </thread>
+     <?php
    
      $con = mysqli_connect("localhost", "root", "", "dbms");
 
@@ -86,14 +100,17 @@ session_start();
     while($row=mysqli_fetch_assoc($result))
     {
         ?>
+        <tbody>
         <tr> 
            
-             <td><?php echo $row['tfees']?></td>
-             <td><?php echo $row['subs']?></td>
-             <td><?php echo $row['efees']?></td>
-             <td><?php echo $row['ofees']?></td>
-             <td><?php echo $row['total']?></td>
-        </tr>
+           <td scope="row"><?php echo $row['tfees']?></td>
+           <td><?php echo $row['subs']?></td>
+           <td><?php echo $row['efees']?></td>
+           <td><?php echo $row['ofees']?></td>
+           <td><?php echo $row['total']?></td>
+      </tr>
+        </tbody>
+       
     <?php
             
     }
