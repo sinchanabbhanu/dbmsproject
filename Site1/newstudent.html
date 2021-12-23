@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="newstudent.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  LOGO
+               </div>
+               <div class="menu">
+                  <ul>
+                    
+                     <li><a href="#">LOGOUT</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <div class="content">
+           <div class="Student Details">
+              <div class="heading">
+                 <p>
+                    Student Details
+                 </p>
+              </div>
+              <table class="table table-hover table-dark">
+               <thead>
+                 <tr>
+                   <th scope="col">USN</th>
+                   <th scope="col">Student Name</th>
+                   <th scope="col">Parent Name</th>
+                   <th scope="col">Course Name</th>
+                   <th scope="col">Category Name</th>
+                   </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">usn</th>
+                   <td>sname</td>
+                   <td>pname</td>
+                   <td>course name</td>
+                   <td>cat name</td>
+                  </tr>
+               </tbody>
+             </table>
+
+           </div>
+           <div class="Fee Details">
+            <div class="heading">
+               <p>
+                  Fee Details
+               </p>
+            </div>
+            <table class="table table-hover table-dark">
+             <thead>
+               <tr>
+                 <th scope="col">Tuition Fees</th>
+                 <th scope="col">Subscription</th>
+                 <th scope="col">Exam Fees</th>
+                 <th scope="col">Other Fees</th>
+                 <th scope="col">Total</th>
+                 </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <th scope="row">tfees</th>
+                 <td>subs</td>
+                 <td>efees</td>
+                 <td>ofees</td>
+                 <td>total</td>
+                </tr>
+             </tbody>
+           </table>
+
+         </div>
+
+         </div>
+      </div>
+      <script>
+           $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>
+   </body>
+</html>
