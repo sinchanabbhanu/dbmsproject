@@ -11,7 +11,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="homepage.css">
 
 
 
@@ -19,12 +19,15 @@ session_start();
 <body>
     <section>
         <div class="section-1">
-            <p>the header</p>
+            <h1>the header</h1>
         </div>
     </section>
     <section>
-        <table>
+        
         <div class="student-details">
+            <div>
+                <p>student details</p>
+            </div>
         <table class="table table-hover table-dark">
         <thread>
             <tr>
@@ -70,7 +73,7 @@ session_start();
    ?>
         </div>
     </section>
-    <section class="section-2">
+    <section class="section-3">
         <div class="fee-details">
         <table class="table table-hover table-dark">
             <thread>

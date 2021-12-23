@@ -1,0 +1,22 @@
+.section-1{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color:aquamarine;
+    min-height: 258px;
+    height: auto;
+    
+}
+.section-1 h1{
+ font-size:70px;
+ font-style: italic;
+ font-family: 'Trebuchet MS';
+}
+
+.student-details{
+min-height:3px;
+background-color:rgb(209, 202, 202);
+}
+.fee-details{
+    background-color: blue;
+    min-height: 300px;
+}
