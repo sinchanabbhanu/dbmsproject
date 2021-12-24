@@ -135,6 +135,9 @@ session_start();
 
          </div>
       </div>
+      <div class="payment status">
+         <p>here the table </p>
+      </div>
       <script>
            $(document).ready(function() {
             $(".menu-icon").on("click", function() {

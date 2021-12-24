@@ -115,6 +115,15 @@ nav ul li a {
 
 }
 
+.insert{
+  background: rgb(30, 107, 107)!important;
+}
 
+.update{
+  background: rgb(69, 78, 78)!important;
+}
+.delete{
+  background: rgb(20, 20, 20)!important;
+}
 
   
