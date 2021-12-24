@@ -22,7 +22,7 @@ $query_result = mysqli_fetch_array($query);
     if($query_result['upassword']  == $password)
     {
         $_SESSION['username']=$username;
-        header('Location: Page-3.php');  
+        header('Location: newstudent.php');  
         mysqli_close($con);
     }
 
