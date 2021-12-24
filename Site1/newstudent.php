@@ -29,7 +29,7 @@ session_start();
                <div class="menu">
                   <ul>
                     
-                     <li><a href="#">LOGOUT</a></li>
+                     <li><a href="logout.php">LOGOUT</a></li>
                   </ul>
                </div>
             </nav>
