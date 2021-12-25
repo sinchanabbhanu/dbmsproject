@@ -7,7 +7,7 @@ session_start();
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Responsive Sticky Navbar</title>
+      <title>Fee Details</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -24,7 +24,7 @@ session_start();
                   <i class="fa fa-bars fa-2x"></i>
                </div>
                <div class="logo">
-                  LOGO
+                  FM$
                </div>
                <div class="menu">
                   <ul>
@@ -41,7 +41,7 @@ session_start();
                     Student Details
                  </p>
               </div>
-              <table class="table table-hover table-dark">
+              <table class="table table-hover table-striped table-bordered" id="table1">
                <thead>
                  <tr>
                    <th scope="col">USN</th>
@@ -88,7 +88,7 @@ session_start();
                   Fee Details
                </p>
             </div>
-            <table class="table table-hover table-dark">
+            <table class="table table-hover table-striped table-bordered" id="table2">
              <thead>
                <tr>
                  <th scope="col">Tuition Fees</th>
@@ -137,11 +137,9 @@ session_start();
 
       <div class="payment_Details">
             <div class="heading">
-               <p>
-                  Payment Details
-               </p>
+               <p>Payment Details</p>
             </div>
-            <table class="table table-hover table-dark">
+            <table class="table table-hover table-striped table-bordered" id="table3">
              <thead>
                <tr>
                  <th scope="col">USN</th>
@@ -179,9 +177,12 @@ session_start();
          ?>
 
          </div>
-
+         <div class="contact">
+         <p>****Details mentioned here is only for information. For verification, please contact NMAMIT, Nitte****</p>
+         <p>feeManagementNitte@gmail.com<br>#9424335519</p>
          </div>
       </div>
+   </div>
 
 
 

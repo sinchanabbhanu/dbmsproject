@@ -21,7 +21,7 @@
                   <i class="fa fa-bars fa-2x"></i>
                </div>
                <div class="logo">
-                  LOGO
+                  FM$
                </div>
                <div class="menu">
                   <ul>
@@ -108,3 +108,25 @@
 
 </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+   $(".menu-icon").on("click", function() {
+         $("nav ul").toggleClass("showing");
+   });
+});
+
+// Scrolling Effect
+
+$(window).on("scroll", function() {
+   if($(window).scrollTop()) {
+         $('nav').addClass('black');
+   }
+
+   else {
+         $('nav').removeClass('black');
+   }
+})
+</script>
+</body>
+</html>
