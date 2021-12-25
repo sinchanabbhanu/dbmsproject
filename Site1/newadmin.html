@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Responsive Sticky Navbar</title>
+      <title>Admin Page</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -34,7 +34,7 @@
         
 <div class="insert">
   <div class="content1">
-   <p>Insert the data of the late comer</p>
+   <p>Insert the data of the new student</p>
   </div>
   <form action="insert.php" method="post">
   <div class="container">
@@ -58,7 +58,7 @@
         <div class="mt-4"><input placeholder="CAT id" type="text" name="catid" id="0.6698439548227921" class="form-control"></div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-         <div class="mt-4"><input placeholder="Payment status"  name="status" type="text" id="0.6698439548227921" class="form-control"></div>
+         <div class="mt-4"><input placeholder="Payment status"  name="status" type="text" id="stat" class="form-control"></div>
        </div>
      </div>
   </div>
@@ -71,15 +71,15 @@
 
 <div class="update">
     <div class="content2">
-     <p>update the user from status of payment(pending/paid) </p>
+     <p>Update the payment status </p>
     </div>
     <form action="update.php" method="post">
        <div class="container">
-         <div class="row">
+         <div class="row2">
             <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-               <div class="mt-4"><input placeholder="USN" type="text"  name="usn" id="0.18639548590645316" class="form-control"></div>
+               <div class="mt-4"><input placeholder="USN" type="text"  name="usn" id="up" class="form-control"></div>
              </div>
-             <div>
+             <div class="button2">
               <button type="submit" class="btn btn-primary" name="paid">Paid</button>
             </div>
          </div>
@@ -89,16 +89,16 @@
 
 <div class="delete">
    <div class="content3">
-     <p>delete the student from the database </p>
+     <p>Delete the student record </p>
    </div>
    
     <form method="post" action="delete.php">
        <div class="container">
-         <div class="row">
+         <div class="row3">
             <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-               <div class="mt-4"><input placeholder="USN" type="text" name="usn" id="0.18639548590645316" class="form-control"></div>
+               <div class="mt-4"><input placeholder="USN" type="text" name="usn" id="del" class="form-control"></div>
              </div>
-             <div>
+             <div class="button3">
               <button type="submit" class="btn btn-primary" name="delete">Delete</button>
             </div>
          </div>
