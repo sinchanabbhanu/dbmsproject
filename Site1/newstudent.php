@@ -35,7 +35,7 @@ session_start();
             </nav>
          </header>
          <div class="content">
-           <div class="Student Details">
+           <div class="Student_Details">
               <div class="heading">
                  <p>
                     Student Details
@@ -82,7 +82,7 @@ session_start();
               ?>
 
            </div>
-           <div class="Fee Details">
+           <div class="Fee_Details">
             <div class="heading">
                <p>
                   Fee Details
@@ -133,11 +133,60 @@ session_start();
 
          </div>
 
+        
+
+      <div class="payment_Details">
+            <div class="heading">
+               <p>
+                  Payment Details
+               </p>
+            </div>
+            <table class="table table-hover table-dark">
+             <thead>
+               <tr>
+                 <th scope="col">USN</th>
+                 <th scope="col">Payment Status</th>
+                 </tr>
+             </thead>
+             <?php
+   
+            $con = mysqli_connect("localhost", "root", "", "dbms");
+
+            if (!$con) {
+              die(" Connection failed. Please try again: Error: " . mysqli_connect_error());
+            }
+
+            $name = $_SESSION['username'];
+
+            $sql = "SELECT usn,paidstatus 
+            FROM status 
+            where usn='$name';";
+
+            $result = mysqli_query($con, $sql);
+            while($row=mysqli_fetch_assoc($result))
+          {
+          ?>
+             
+             <tbody>
+               <tr>
+                   <td scope="row"><?php echo $row['usn']?></td>
+                   <td><?php echo $row['paidstatus']?></td>
+               </tr>
+             </tbody>
+           </table>
+           <?php
+             }
+         ?>
+
+         </div>
+
          </div>
       </div>
-      <div class="payment status">
-         <p>here the table </p>
-      </div>
+
+
+
+
+
       <script>
            $(document).ready(function() {
             $(".menu-icon").on("click", function() {

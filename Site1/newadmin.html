@@ -70,25 +70,23 @@
 
 
 <div class="update">
-   <div class="content2">
+    <div class="content2">
      <p>update the user from status of payment(pending/paid) </p>
-   </div>
-   
-    
+    </div>
+    <form action="update.php" method="post">
        <div class="container">
          <div class="row">
             <div class="col-lg-3 col-md-5 col-sm-6 col-12">
-               <div class="mt-4"><input placeholder="USN" type="text" id="0.18639548590645316" class="form-control"></div>
+               <div class="mt-4"><input placeholder="USN" type="text"  name="usn" id="0.18639548590645316" class="form-control"></div>
              </div>
              <div>
               <button type="submit" class="btn btn-primary" name="paid">Paid</button>
             </div>
          </div>
-        
-       </div>
-
-
+        </div>
+    </form>
 </div>
+
 <div class="delete">
    <div class="content3">
      <p>delete the student from the database </p>
