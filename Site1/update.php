@@ -11,7 +11,7 @@
    $sql= "UPDATE status SET paidstatus = 'paid' WHERE usn = '$usn';";
 
    if (mysqli_query($con, $sql)) {
-    echo "New records updated successfully";
+    header('Location: updatesucc.html');
   }
    else {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);

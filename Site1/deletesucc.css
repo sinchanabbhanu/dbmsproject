@@ -1,0 +1,43 @@
+html{
+  background-color: rgb(224, 224, 224);
+
+   
+}
+form{
+    background-color:rgb(10, 10, 10);
+    min-height: 150px;
+    max-width:400px;
+    margin-top:280px;
+    margin-left:500px;
+    border-radius: 20px;
+   
+}
+
+p{
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: bold;
+   
+    padding-top: 25px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.btn{
+    padding-left: 10px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Playfair Display';
+    border-radius: 5px;
+  
+}
+
+
+#close{
+    margin-left: 170px;
+
+}

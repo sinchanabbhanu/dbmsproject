@@ -19,7 +19,7 @@
 
 
    if (mysqli_multi_query($con, $sql)) {
-    echo "New records created successfully";
+    header('Location: insertsucc.html');
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);
   }

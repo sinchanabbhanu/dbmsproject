@@ -17,7 +17,7 @@
           }
 
    if (mysqli_query($con, $query)) {
-    echo "Record deleted successfully";
+    header('Location: deletesucc.html');
   }
    else {
     echo "Error: " . $query . "<br>" . mysqli_error($con);
