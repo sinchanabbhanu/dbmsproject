@@ -1,6 +1,8 @@
 # dbmsproject
 In this project we have implemented a simple Fee Management System. It has got simple SQL operations which has made it easier for the administrator to manage the system.
 We have made use of basic front end and PHP for the back end.
+
+
 ![Screenshot (59)](https://user-images.githubusercontent.com/76662940/167665784-2614685b-2d08-4069-a255-3c5392615f65.png)
 ![Screenshot (60)](https://user-images.githubusercontent.com/76662940/167665825-5398344d-a272-4950-a872-0888bc0fd688.png)
 ![Screenshot (61)](https://user-images.githubusercontent.com/76662940/167665868-642746d2-2f67-4e83-a468-cee25a3a3728.png)
